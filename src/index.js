@@ -1,6 +1,6 @@
 const express = require("express");
 
-const IndexRouter = require("./controllers/v0/index.router");
+const IndexRouter = require("./controllers/v1/index.router");
 
 const bodyParser = require('body-parser');
 
