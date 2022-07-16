@@ -27,7 +27,7 @@ router.post('/', async (req, res) => {
 
     if (info.length < 1 || info.length > 20)
     {
-      throw "API can only support a a minimum of 1 split entity and a maximum of 20 entities"
+      throw "API can only support a minimum of 1 split entity and a maximum of 20 entities"
     }
 
     const rayt = arr.findAllMatching(info, "SplitType", 'RATIO');

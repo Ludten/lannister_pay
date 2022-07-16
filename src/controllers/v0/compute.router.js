@@ -90,13 +90,11 @@ router.post('/', async (req, res) => {
     if (ratio > 0) {
       for (let i = 0; i < info.length; i++) {
         let obj3 = {};
-        let cramount = camount;
         const element = info[i];
         if ((element['SplitType']) === 'RATIO')
         {
           obj3["SplitEntityId"] = element['SplitEntityId'];
           obj3["amount"] = (camount * (element['SplitValue'] / ratio));
-          cramount -= obj3["amount"];
           SplitBreakdown.push(obj3);
         }
       }
