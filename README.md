@@ -56,7 +56,7 @@ Launch the API locally.
             "SplitType": "PERCENTAGE",
             "SplitValue": 10,
             "SplitEntityId": "LNPYACC0215"
-        },
+        }
     ]
 }
 ```
