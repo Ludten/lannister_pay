@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.use('/split-payments/compute', ComputeRouter)
       .get('/', async (req, res) => {
-	res.send(`V0`);
+	res.send(`V1`);
       });
 
 

@@ -4,23 +4,23 @@ const Pay = require("../../util/util");
 const router = express.Router();
 
 router.post('/', async (req, res) => {
-	const amount = req.body.Amount;
-  const info = req.body.SplitInfo;
-  const id = req.body.ID
-
-  if (!amount) {
-    return res.status(400).send({message: 'Amount is required or malformed.'});
-  }
-
-  if (!info) {
-    return res.status(400).send({message: 'split information is required or malformed.'});
-  }
-
-  if (!id) {
-    return res.status(400).send({message: 'id is required or malformed.'});
-  }
-
   try {
+    const amount = req.body.Amount;
+    const info = req.body.SplitInfo;
+    const id = req.body.ID
+
+    if (!amount) {
+      return res.status(400).send({message: 'Amount is required or malformed.'});
+    }
+
+    if (!info) {
+      return res.status(400).send({message: 'split information is required or malformed.'});
+    }
+
+    if (!id) {
+      return res.status(400).send({message: 'id is required or malformed.'});
+    }
+
     let SplitBreakdown = [];
     let ratio = 0;
     let camount = amount;
