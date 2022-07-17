@@ -22,7 +22,6 @@ const bodyParser = require('body-parser');
 
   // Start the Server
   app.listen( port, () => {
-    console.log( `server running on ${port}` );
     console.log( `press CTRL+C to stop server` );
   } );
 })();

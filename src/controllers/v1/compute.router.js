@@ -100,7 +100,6 @@ router.post('/', async (req, res) => {
     res.status(200).json(bal);
 
   } catch (err) {
-    console.log(err);
     return res.status(500)
               .send(err);
   };
